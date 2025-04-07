@@ -8,7 +8,6 @@ use InvalidArgumentException;
 use JMS\Serializer\Annotation as Serializer;
 use Naugrim\BMEcat\Builder\NodeBuilder;
 use Naugrim\BMEcat\Exception\UnknownKeyException;
-use Naugrim\OpenTrans\Nodes\Order\Item;
 use Naugrim\OpenTrans\Nodes\Udx;
 use Naugrim\OpenTrans\Nodes\UdxAggregate;
 use Naugrim\OpenTrans\Nodes\UdxInterface;
