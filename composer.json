@@ -24,7 +24,7 @@
         }
     },
     "require-dev": {
-        "enlightn/security-checker": "^1.10",
+        "enlightn/security-checker": "~1.10.0",
         "phpstan/phpstan": "^1.9",
         "phpunit/phpunit": "^9.5",
         "symplify/easy-coding-standard": "^11.2"
