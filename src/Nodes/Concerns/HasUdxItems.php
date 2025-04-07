@@ -27,7 +27,7 @@ trait HasUdxItems
     /**
      * @param array<UdxInterface|array<int|string, mixed>> $udxItems
      *
-     * @return Item
+     * @return $this
      * @throws UnknownKeyException
      */
     public function setUdxItems(array $udxItems): self
