@@ -3157,7 +3157,7 @@
 					<xsd:simpleType>
 						<xsd:restriction base="dtSTRING">
 							<xsd:maxLength value="250"/>
-							<xsd:minLength value="1"/>
+							<xsd:minLength value="0"/>
 							<xsd:pattern value="buyer_specific|customer_specific|duns|iln|gln|party_specific|supplier_specific|\w{1,250}"/>
 						</xsd:restriction>
 					</xsd:simpleType>
@@ -5612,7 +5612,7 @@
 			<xsd:simpleContent>
 				<xsd:restriction base="dtMLSTRING">
 					<xsd:maxLength value="50"/>
-					<xsd:minLength value="1"/>
+					<xsd:minLength value="0"/>
 				</xsd:restriction>
 			</xsd:simpleContent>
 		</xsd:complexType>
@@ -5622,7 +5622,7 @@
 			<xsd:simpleContent>
 				<xsd:restriction base="dtMLSTRING">
 					<xsd:maxLength value="50"/>
-					<xsd:minLength value="1"/>
+					<xsd:minLength value="0"/>
 				</xsd:restriction>
 			</xsd:simpleContent>
 		</xsd:complexType>

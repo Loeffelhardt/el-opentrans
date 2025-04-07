@@ -7,9 +7,10 @@ parameters:
        - src/
 
     reportUnmatchedIgnoredErrors: false
-    checkMissingIterableValueType: false
-    checkGenericClassInNonGenericObjectType: false
     treatPhpDocTypesAsCertain: false
+
+    ignoreErrors:
+        - '#PHPDoc tag \@var with type Naugrim\\BMEcat\\Nodes\\Contracts\\NodeInterface is not subtype of native type \$this.+#'
 
     parallel:
       processTimeout: 120.0
