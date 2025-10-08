@@ -3118,6 +3118,14 @@
 			</xsd:restriction>
 		</xsd:simpleContent>
 	</xsd:complexType>
+    <xsd:complexType name="typeMLSTRING00050_OPTIONAL">
+        <xsd:simpleContent>
+            <xsd:restriction base="dtMLSTRING">
+                <xsd:maxLength value="50"/>
+                <xsd:minLength value="0"/>
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
 	<xsd:complexType name="typeMLSTRING00080">
 		<xsd:simpleContent>
 			<xsd:restriction base="dtMLSTRING">
@@ -4466,7 +4474,7 @@
 		<xsd:simpleType>
 			<xsd:restriction base="dtSTRING">
 				<xsd:maxLength value="255"/>
-				<xsd:minLength value="1"/>
+				<xsd:minLength value="0"/>
 			</xsd:restriction>
 		</xsd:simpleType>
 	</xsd:element>
@@ -4525,7 +4533,7 @@
 	<xsd:element name="FAX">
 		<xsd:complexType>
 			<xsd:complexContent>
-				<xsd:extension base="typeMLSTRING00050">
+				<xsd:extension base="typeMLSTRING00050_OPTIONAL">
 					<xsd:attribute name="type" use="optional">
 						<xsd:simpleType>
 							<xsd:restriction base="dtSTRING">
@@ -5884,7 +5892,7 @@
 	<xsd:element name="PHONE">
 		<xsd:complexType>
 			<xsd:complexContent>
-				<xsd:extension base="typeMLSTRING00050">
+				<xsd:extension base="typeMLSTRING00050_OPTIONAL">
 					<xsd:attribute name="type" use="optional">
 						<xsd:simpleType>
 							<xsd:restriction base="dtSTRING">
